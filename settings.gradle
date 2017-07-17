@@ -1,0 +1,1 @@
+include ':app',':aMap',':uShare',':mdplayer',':ijkplayer-exo',':ijkplayer-java'

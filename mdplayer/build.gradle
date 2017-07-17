@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':ijkplayer-exo')
+    compile 'com.android.support:appcompat-v7:25.+'
+    compile 'com.android.support:preference-v7:25.+'
+    compile 'com.android.support:design:25.+'
+    compile 'com.android.support:recyclerview-v7:25+'
+    compile 'com.takisoft.fix:preference-v7:23.4.0.4'
+    compile 'com.github.clans:fab:1.6.4'
+    //retrofit
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    //Rxjava + Rxandroid
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'io.reactivex:rxjava:1.1.5'
+    //blurview
+    compile 'com.eightbitlab:blurview:1.0.2'
+    //photoview
+    compile 'com.bm.photoview:library:1.4.0'
+    compile 'me.relex:photodraweeview:1.1.2'
+    //picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //fresco
+    compile 'com.facebook.fresco:fresco:0.11.0'
+    //umeng
+    compile 'com.umeng.analytics:analytics:latest.integration'
+}

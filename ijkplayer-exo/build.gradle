@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    compile 'com.google.android.exoplayer:exoplayer:r1.5.7'
+
+    compile project(':ijkplayer-java')
+}
+
+ext {
+    optionalPlugins = null;
+    // optionalPlugins = ['tools/gradle-mvn-push.gradle', 'tools/gradle-bintray-upload.gradle'];
+}
+
+ext.optionalPlugins.each{ value ->
+    def plugin_file = new File(rootProject.projectDir, value);
+    if (plugin_file.exists()) {
+        apply from: plugin_file
+    }
+}

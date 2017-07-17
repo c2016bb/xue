@@ -1,0 +1,11 @@
+大家写的时候稍微注意一下，
+1.TextView和Edittext在text_styles.xml文件里面有统一好的style，正常的字体请使用TextView_14_wrap，标题用16的
+2.标题栏已经有了自定义的ToolBar：TopBar，可以直接使用，使用方法:
+  <com.taoxue.ui.view.TopBar
+        android:id="@+id/topbar"
+        style="@style/TopBar"
+        app:title="逃学" />
+3.字符串请在xml中定义，不要写死，并且做国际化适配。
+4.打印Log请使用LogUtils.
+5.尺寸尽量使用通用的，有small,middle,normal.尺寸尽量写成8的倍数(大谷歌推荐的)。
+注意一下保持风格统一，免得再花时间修改。
