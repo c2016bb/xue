@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_seccess_bind_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taoxue.ui.module.mine.SeccessBindCardActivity">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/TopBar"
+        android:background="@color/cf0f0f0"
+        android:elevation="6dp">
+
+        <TextView
+            android:id="@+id/classification"
+            style="@style/TextView_16_wrap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/reader_card_bind_success"
+            android:textColor="@color/black"
+            android:textSize="@dimen/subtitle_text" />
+    </android.support.v7.widget.Toolbar>
+
+    <include
+        layout="@layout/layout_divider_hor"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size30dp"
+            android:src="@mipmap/reader_carddui" />
+
+        <TextView
+            style="@style/TextView_16_wrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size20dp"
+            android:text="@string/reader_card_bind_successed" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="@dimen/reader_car_bind_success_user_info_width"
+                android:layout_height="@dimen/reader_car_bind_success_user_info_height"
+                android:layout_marginTop="@dimen/size40dp"
+                android:background="@drawable/reader_card_rect"
+                android:orientation="vertical"
+                android:padding="@dimen/size5dp">
+                <com.taoxue.ui.view.MultiView
+                    android:id="@+id/zi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    app:isDivder="true"
+                    app:firstString="@string/zonghe"
+                    app:rownum="3"
+                    >
+                </com.taoxue.ui.view.MultiView>
+                <!--app:rowWeight="4:3:2"-->
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:visibility="gone"
+                 >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.taoxue.ui.view.AlignTextView
+                        android:id="@+id/alignTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/name"
+                        app:AlignTextColor="@android:color/darker_gray"
+                        app:AlignTextSize="14sp"
+                        app:Max="5" />
+                    <!--android:gravity="right"-->
+                    <TextView
+                        android:id="@+id/name_tv"
+                        style="@style/TextView_14_wrap.gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="姓名"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/layout_divider_hor"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.taoxue.ui.view.AlignTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/reader_code_id"
+                        app:AlignTextColor="@android:color/darker_gray"
+                        app:AlignTextSize="14sp"
+                        app:Max="5" />
+
+                    <TextView
+                        android:id="@+id/reader_code_tv"
+                        style="@style/TextView_14_wrap.gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="asdsdasasa"
+                        />
+                </LinearLayout>
+
+                <include layout="@layout/layout_divider_hor"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.taoxue.ui.view.AlignTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/reader_guan"
+                        app:AlignTextColor="@android:color/darker_gray"
+                        app:AlignTextSize="14sp"
+                        app:Max="5" />
+
+                    <TextView
+                        android:id="@+id/reader_guan_tv"
+                        style="@style/TextView_14_wrap.gray"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="23142344"
+                        />
+                </LinearLayout>
+             </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/unbind_BTN"
+                android:layout_width="@dimen/reader_car_bind_success_user_btn_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/shape_half_circle_primary_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="8dp"
+                    android:text="@string/unbind_reader_card"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/content_text" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spectial_detail_item_height"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/size10dp"
+    android:paddingBottom="@dimen/size10dp"
+    android:paddingLeft="@dimen/size5dp"
+    >
+
+    <ImageView
+        android:id="@+id/book_bg_image"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/size20dp"
+        android:layout_marginRight="@dimen/size60dp"
+        android:paddingTop="@dimen/size5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            style="@style/TextView_16_wrap"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            style="@style/TextView_14_wrap"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextView_12_wrap"
+                android:textColor="@color/red"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reader_count"
+                style="@style/TextView_12_wrap"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_marginTop="@dimen/size10dp"
+            style="@style/TextView_14_wrap"
+            android:text="sdcvvdsfvaddvdfsf"
+            android:gravity="top"
+            />
+    </LinearLayout>
+</LinearLayout>

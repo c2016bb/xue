@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+    <ImageView
+        android:id="@+id/classification_item_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        />
+    </RelativeLayout>
+    <!--android:background="@mipmap/u1963"-->
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextView_16_wrap"
+        />
+    </RelativeLayout>
+</LinearLayout>
+    <!--android:background="@drawable/selector_class_button_click"-->

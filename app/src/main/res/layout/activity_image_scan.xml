@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_image_scan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.taoxue.ui.module.classification.ImageScanActivity">
+
+    <com.taoxue.ui.view.TopBar
+        android:id="@+id/introduction_topbar"
+        android:background="#0000"
+        style="@style/TopBar"
+        app:title="查看图片"
+         />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/iamge_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:id="@+id/tipsBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/image_coment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        >
+        <LinearLayout
+            android:id="@+id/commit_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/size10dp"
+            android:paddingBottom="@dimen/size10dp"
+            android:paddingLeft="@dimen/size20dp"
+            android:paddingRight="@dimen/size10dp"
+            >
+            <EditText
+                android:id="@+id/image_comment_Content_et"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"
+                android:hint="写评论..."
+                android:textColorHint="@color/white"
+                android:paddingLeft="@dimen/size10dp"
+                android:paddingRight="@dimen/size10dp"
+
+                android:background="@drawable/shape_comment_image"
+                android:gravity="center_vertical"
+                android:textCursorDrawable="@drawable/shape_cursor_edittext"
+                android:layout_gravity="bottom"
+                />
+            <!--android:paddingTop="@dimen/size2dp"-->
+            <!--android:paddingBottom="@dimen/size2dp"-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/image_give_thumb_iv"
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/collection"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/image_ping_lun_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/ping_lun"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/image_collection_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/ping_fen"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

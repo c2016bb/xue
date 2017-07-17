@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="home_icon">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="BaseItemStyle" parent="TextView_14_wrap">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ItemStyle" parent="BaseItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/normal</item>
+        <item name="android:paddingRight">@dimen/normal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/middle</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+    </style>
+
+    <style name="ButtonPrimary" parent="TextView_16_wrap.White">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_default_button</item>
+    </style>
+
+    <style name="HomeTabStyle">
+        <item name="android:background">@drawable/selectable_default_white</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Home_menu_layout" parent="BaseItemStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/normal</item>
+        <item name="android:paddingBottom">@dimen/normal</item>
+    </style>
+
+    <style name="Home_menu_icon">
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">52dp</item>
+    </style>
+
+
+</resources>

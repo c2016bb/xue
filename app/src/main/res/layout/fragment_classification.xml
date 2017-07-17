@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical">
+    <!--android:background="@color/colorPrimary"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            style="@style/TopBar"
+            android:background="@color/colorPrimary"
+            android:elevation="6dp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/classification"
+                style="@style/TextView_16_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/fenlei"
+                android:textSize="@dimen/subtitle_text" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@+id/classification"-->
+            <!--android:background="@color/white">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--&gt;-->
+               <!--<com.taoxue.ui.view.toppicLayoutView-->
+                   <!--android:layout_width="match_parent"-->
+                   <!--android:layout_height="wrap_content"-->
+                   <!--android:visibility="gone">-->
+               <!--</com.taoxue.ui.view.toppicLayoutView>-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/classification_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    ></android.support.v7.widget.RecyclerView>
+            <!--</LinearLayout>-->
+
+        <!--</ScrollView>-->
+    </LinearLayout>
+</FrameLayout>

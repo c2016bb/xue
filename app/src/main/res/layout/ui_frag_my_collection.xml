@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selectable_default_white"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/default_margin_large"
+    android:paddingRight="@dimen/default_margin_large"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/frag_collection_iv_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/default_margin_small"
+            >
+
+
+            <TextView
+                android:id="@+id/frag_collection_tv_book_name"
+                style="@style/TextView_16_wrap"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/home_history_reading"
+                android:textColor="@color/gray" />
+
+            <ImageView style="@style/home_icon_entry" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin_large"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/frag_collection_tv_format_name"
+                style="@style/TextView_12_wrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:text="格式：mp4"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/frag_collection_tv_time"
+                style="@style/TextView_12_wrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2017 3 30"
+                android:textColor="@color/gray" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

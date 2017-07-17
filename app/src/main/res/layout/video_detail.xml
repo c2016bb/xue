@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+      >
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/size10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_marginRight="@dimen/size10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/video_image_iv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size10dp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/video_title_tv"
+                    style="@style/TextView_16_wrap"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView_12_wrap.gray"
+                        android:text="@string/video_type" />
+
+                    <TextView
+                        android:id="@+id/video_type_tv"
+                        style="@style/TextView_12_wrap.gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextView_12_wrap.gray"
+                        android:text="@string/video_dianji" />
+
+                    <TextView
+                        android:id="@+id/video_dianji_count_tv"
+                        style="@style/TextView_12_wrap.gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!--<TextView-->
+                    <!--style="@style/TextView_12_wrap.gray"-->
+                    <!--android:text="@string/guan_detail" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/guan_detail_tv"-->
+                    <!--style="@style/TextView_12_wrap.gray" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_divider_hor" />
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/video_recycleview"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+          </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginBottom="@dimen/size10dp"-->
+            <!--android:layout_marginTop="@dimen/size10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="@dimen/size20dp"-->
+            <!--android:paddingRight="@dimen/size20dp"-->
+            <!--android:visibility="gone"-->
+            <!--&gt;-->
+
+            <!--<com.taoxue.ui.module.classification.CollectionView-->
+                <!--android:id="@+id/add_video_btn"-->
+                <!--style="@style/TextView_16_wrap"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginRight="@dimen/size20dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/button_border"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/add_book" />-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/recommend_video_ll"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="@dimen/size20dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/button_border"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/size20dp"-->
+                    <!--android:layout_height="@dimen/size20dp"-->
+                    <!--android:background="@color/bg_color"-->
+                    <!--android:src="@mipmap/u2478" />-->
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_16_wrap"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/bg_color"-->
+                    <!--android:text="@string/give_thumbs" />-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+        <!--<include layout="@layout/layout_divider_hor" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/size5dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingLeft="@dimen/size10dp"-->
+            <!--android:paddingRight="@dimen/size10dp">-->
+
+            <!--<TextView-->
+                <!--style="@style/TextView_16_wrap"-->
+                <!--android:layout_marginBottom="@dimen/size5dp"-->
+                <!--android:layout_marginTop="@dimen/size5dp"-->
+                <!--android:text="@string/content_abstract" />-->
+
+            <!--<com.taoxue.utils.LimitLineTextView-->
+                <!--android:id="@+id/video_content_tv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:llTextColor="@android:color/darker_gray"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:context="com.taoxue.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="false" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:elevation="13dp"
+        android:orientation="vertical">
+
+        <View style="@style/dividing_line" />
+
+        <com.taoxue.ui.view.EasyRadioGroup
+            android:id="@+id/home_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:clipChildren="false"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/home_fral_one"
+                style="@style/HomeTabStyle"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/home_tab_img_size"
+                        android:layout_height="@dimen/home_tab_img_size"
+                        android:src="@drawable/bg_tab_home" />
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/home_fral_two"
+                style="@style/HomeTabStyle"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_tab_img_size"
+                        android:layout_height="@dimen/home_tab_img_size"
+                        android:src="@drawable/bg_tab_classify" />
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+
+                style="@style/HomeTabStyle"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_tab_img_size"
+                        android:layout_height="@dimen/home_tab_img_size"
+                        android:layout_weight="1"
+                        android:src="@drawable/bg_tab_translate" />
+
+                    <TextView
+                        style="@style/TextView_12_wrap"
+                        android:text="@string/special"
+                        android:textColor="@color/selector_home_text" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/home_fral_three"
+                style="@style/HomeTabStyle"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_tab_img_size"
+                        android:layout_height="@dimen/home_tab_img_size"
+                        android:src="@drawable/bg_tab_mine" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </com.taoxue.ui.view.EasyRadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

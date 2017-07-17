@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <com.taoxue.ui.view.TopBar
+        android:id="@+id/special_detail_topbar"
+        style="@style/TopBar"
+        app:title="we"
+         />
+
+    <include
+        layout="@layout/special_item"
+        />
+
+    <ListView
+        android:id="@+id/special_detail_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

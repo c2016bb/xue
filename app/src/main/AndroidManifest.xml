@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.taoxue">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.TaoXueApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="android.support.v7.appcompat">
+        <activity
+            android:name=".ui.module.login.PushActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard"
+            android:theme="@style/Theme.Start">
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="readerunited" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.module.login.welcome.WelcomeActivity" />
+        <activity
+            android:name=".ui.module.classification.BookIntroductionActivity"
+            android:theme="@style/Theme.Slidr.Slidable" />
+        <activity android:name=".ui.module.classification.AudioIndroductionActivity" />
+        <!-- android:theme="@style/Theme.Translucent.StatusBar" -->
+        <service android:name=".ui.module.classification.AudioPlayerService" />
+
+        <activity
+            android:name=".ui.module.classification.ClassificationDetailActivity"
+            android:theme="@style/Theme.Slidr.Slidable" />
+        <activity
+            android:name=".ui.module.classification.ImageScanActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.module.mine.SeccessBindCardActivity" />
+
+        <!-- android:process=":background" -->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Start" />
+        <activity android:name=".ui.module.login.RegisterActivity" />
+        <activity
+            android:name=".ui.module.home.ZXingActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard" />
+        <activity
+            android:name=".ui.module.home.PlayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.module.login.LoginActivity" />
+        <activity android:name=".ui.module.home.ExampleActivity" />
+        <activity android:name=".ui.module.home.MyCollectionActivity" />
+        <activity android:name=".ui.module.home.PlayRecordActivity" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="01d6864c841ad40a10413224975a9c6f" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <!-- 分享相关 -->
+        <activity
+            android:name="com.umeng.soexample.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- tencent -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5908272c1061d27a81000a5f" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <!-- <activity android:name="com.xiaolu.TestActivity"/>&lt;!&ndash; ATTENTION: This was auto-generated to add Google Play services to your project for -->
+        <!-- App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
+        <activity android:name=".ui.module.mine.MyInformationActivity" />
+        <activity android:name=".ui.module.setting.SettingActivity" />
+        <activity
+            android:name=".ui.module.login.ReaderCardActivity"
+            android:label="@string/title_activity_reader_card"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.module.mine.NickNameActivity" />
+        <activity android:name=".ui.TestActivity" />
+
+        <service android:name=".utils.update.MyUpdateService" />
+
+        <!-- <receiver android:name=".ui.module.classification.AudioNotificationBroadcastReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="ACTION_BUTTON"></action> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <activity android:name=".ui.module.mine.MyLibraryActivity" />
+        <!--图书馆首页-->
+        <activity android:name=".ui.module.search.LibraryHomeActivity" />
+        <!--资源提供商-->
+        <activity android:name=".ui.module.search.ResourceProviderActivity" />
+        <activity android:name=".ui.module.search.TestSearchActivity" />
+        <activity
+            android:name=".ui.module.search.SearchLibActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.module.classification.ResourceDetailActivity" />
+        <activity
+            android:name=".ui.module.classification.AudioPlayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.module.classification.CommentActivity" />
+        <!--供应商搜索-->
+        <activity
+            android:name=".ui.module.search.SearchSupplierActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.module.classification.DocReadActivity" />
+        <activity
+            android:name=".ui.module.search.SearchResourcesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ui.module.search.SearchZiYuanKuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".ui.module.search.SearchResultActivity" />
+        <activity android:name=".ui.module.classification.resourceLib.ResourceLibraryActivity"></activity>
+        <activity android:name=".ui.module.search.SearchResultActivity"/>
+    </application>
+
+</manifest>

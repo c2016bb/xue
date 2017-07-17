@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="superrecyclerview">
+        <attr name="layout_empty" format="reference" />
+        <attr name="layout_moreProgress" format="reference" />
+        <attr name="layout_progress" format="reference" />
+        <attr name="recyclerClipToPadding" format="boolean" />
+        <attr name="recyclerPadding" format="dimension" />
+        <attr name="recyclerPaddingTop" format="dimension" />
+        <attr name="recyclerPaddingBottom" format="dimension" />
+        <attr name="recyclerPaddingLeft" format="dimension" />
+        <attr name="recyclerPaddingRight" format="dimension" />
+        <attr name="scrollbarStyle">
+            <flag name="insideOverlay" value="0x0" />
+            <flag name="insideInset" value="0x01000000" />
+            <flag name="outsideOverlay" value="0x02000000" />
+            <flag name="outsideInset" value="0x03000000" />
+        </attr>
+
+        <attr name="mainLayoutId" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="loadmorerecyclerview">
+        <attr name="layout_xempty" format="reference" />
+        <attr name="layout_loadMoreProgress" format="reference" />
+        <attr name="layout_xprogress" format="reference" />
+        <attr name="xrecyclerClipToPadding" format="boolean" />
+        <attr name="xrecyclerPadding" format="dimension" />
+        <attr name="xrecyclerPaddingTop" format="dimension" />
+        <attr name="xrecyclerPaddingBottom" format="dimension" />
+        <attr name="xrecyclerPaddingLeft" format="dimension" />
+        <attr name="xrecyclerPaddingRight" format="dimension" />
+        <attr name="xscrollbarStyle">
+            <flag name="insideOverlay" value="0x0" />
+            <flag name="insideInset" value="0x01000000" />
+            <flag name="outsideOverlay" value="0x02000000" />
+            <flag name="outsideInset" value="0x03000000" />
+        </attr>
+
+        <attr name="xmainLayoutId" format="reference" />
+    </declare-styleable>
+  <declare-styleable name="LimitLineTextView">
+      <attr name="textsize" format="dimension"></attr>
+      <attr name="llTextColor" format="color"></attr>
+      <attr name="displayMaxLine" format="integer"></attr>
+      <attr name="arrowImage" format="reference|dimension"></attr>
+  </declare-styleable>
+
+
+
+
+    <declare-styleable name="CircleIndicator">
+
+        <attr name="radius" format="dimension|reference" />
+        <attr name="dotMargin" format="dimension|reference" />
+        <attr name="paddingTop" format="dimension|reference" />
+        <attr name="paddingBottom" format="dimension|reference" />
+        <attr name="selected_color" format="color|reference" />
+        <attr name="unselected_color" format="color|reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="EasyRadioGroup">
+        <!--再次点击是否可取消-->
+        <attr name="tab_bg" format="reference" />
+        <attr name="cancelAble" format="boolean" />
+        <attr name="tagOnly" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyAbsListView">
+        <attr name="vertical_divider" format="reference" />
+        <attr name="divider_horizontal" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyGridView">
+        <attr name="columnCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ExpandAbleLayout">
+        <attr name="isExpand" format="boolean" />
+        <attr name="fitScrollView" format="boolean" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RectChartView">
+        <attr name="fill_type" format="enum">
+            <enum name="fill_width" value="0"></enum>
+            <enum name="wrap_width" value="1"></enum>
+        </attr>
+        <attr name="horizontalSpace" format="dimension"></attr>
+        <!--注意，fill_type设置成wrap_width此参数音乐会无效-->
+        <attr name="chartBarWidth" format="dimension" />
+        <attr name="groupSpace" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PageIndicator">
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_color" format="color" />
+        <attr name="indicator_sel_color" format="color" />
+        <attr name="indicator_padding" format="dimension" />
+        <attr name="indicator_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SlideBar">
+        <attr name="sb_textSize" format="dimension" />
+        <attr name="sb_textColor" format="color" />
+        <attr name="sb_textColorSel" format="color" />
+        <attr name="sb_bgColor" format="color" />
+        <attr name="sb_bgColorSel" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TagView">
+        <attr name="maxLines" format="integer" />
+        <attr name="horizontalDivider" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr name="starDistance" format="dimension" />
+        <!--星星大小-->
+        <attr name="starSize" format="dimension" />
+        <!--星星个数-->
+        <attr name="starCount" format="integer" />
+        <!--星星空图-->
+        <attr name="starEmpty" format="reference" />
+        <!--星星满图-->
+        <attr name="starFill" format="reference" />
+    </declare-styleable>
+
+
+    <integer-array name="google_colors">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimary</item>
+    </integer-array>
+
+
+  <!-- 自定义TextView-->
+    <declare-styleable name="AlignTextView">
+        <!--字符串最大的数量 默认包含“ ：” 字符串中间不得存在空格 -->
+        <attr name="Max" format="integer" />
+        <!-- 自定义TextView的宽度，默认自动获取-->
+        <attr name="Width" format="dimension" />
+        <!-- 自定义TextView的高度，默认自动获取-->
+        <attr name="Height" format="dimension" />
+        <!-- 自定义TextView的字体颜色，默认自动获取-->
+        <attr name="AlignTextColor" format="color" />
+        <!-- 自定义TextView的字体大小，默认自动获取-->
+        <attr name="AlignTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- 自定义TextView-->
+    <declare-styleable name="MultiView">
+        <!--行数 总计的行的数量 -->
+        <attr name="rownum" format="integer" />
+        <!--各行的行的比例分配  均需在10以内  以：分隔-->
+        <attr name="rowWeight" format="string" />
+        <!--第一列中显示的文本内容  默认以“；”隔开-->
+        <attr name="firstString" format="string"></attr>
+
+        <!-- 宽度，默认自动获取-->
+        <attr name="multiViewWidth" format="dimension" />
+        <!-- 高度，默认自动获取-->
+        <attr name="multiViewHeight" format="dimension" />
+        <!-- divder是否存在  默认存在 true-->
+        <attr name="isDivder" format="boolean" />
+        <!--  divder高度 -->
+        <attr name="dividerHeight" format="dimension" />
+    </declare-styleable>
+
+     <declare-styleable name="WLinearLayout">
+       <attr name="mWeight" format="float"></attr>
+     </declare-styleable>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resource_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.taoxue.ui.module.classification.ResourceDetailActivity">
+    <com.taoxue.ui.view.TopBar
+        android:id="@+id/introduction_topbar"
+        style="@style/TopBar"
+        app:title="@string/book_jieshao" >
+    </com.taoxue.ui.view.TopBar>
+    <LinearLayout
+        android:id="@+id/resplay_jieshao_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/book_instroduction_content_height"
+        android:layout_marginLeft="@dimen/size10dp"
+        android:layout_marginRight="@dimen/size10dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/resplay_image_iv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scaleType="fitCenter"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size10dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/resplay_title_tv"
+                style="@style/TextView_16_wrap"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.taoxue.ui.view.StarBar
+                    android:id="@+id/resplay_starbar_pinfen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:isIndicator="true"
+                    app:starCount="5"
+                    app:starDistance="2dp"
+                    app:starEmpty="@mipmap/star_score_hui"
+                    app:starFill="@mipmap/star_score_fill"
+                    app:starSize="@dimen/size15dp" />
+                <TextView
+                    android:id="@+id/resplay_pingfen_coun_tv"
+                    android:text="3.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextView_14_wrap.gray"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView2"-->
+                    <!--style="@style/TextView_14_wrap.gray"-->
+                    <!--android:text="@string/supplier" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/resplay_supplier_tv"-->
+                    <!--style="@style/TextView_14_wrap.gray" />-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                    <!--style="@style/TextView_14_wrap.gray"-->
+                    <!--android:text="@string/total_reading" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/resplay_total_reading_tv"-->
+                    <!--style="@style/TextView_14_wrap.gray" />-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/resplay_collection_iv"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/collection_book"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/collection"
+                        style="@style/TextView_14_wrap.red"
+                        android:layout_marginLeft="2dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/resplay_collection_coumn_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextView_14_wrap.red"
+                        android:text="123"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/resplay_giv_thumb_iv"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/give_thumb_book"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/give_thumbs"
+                        android:layout_marginLeft="2dp"
+                        style="@style/TextView_14_wrap.red"
+                        />
+                    <TextView
+                        android:id="@+id/resplay_giv_thumb_coumn_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123"
+                        style="@style/TextView_14_wrap.red"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="0dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/layout_divider_gay_hor"
+        >
+    </include>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/resplay_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/normal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_home_tick_addr_top"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/normal">
+
+            <TextView
+                style="@style/TextView_16_wrap.White"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                tools:text="标题" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

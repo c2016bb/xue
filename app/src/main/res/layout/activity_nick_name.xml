@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nick_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background"
+    android:orientation="vertical"
+    tools:context="com.taoxue.ui.module.mine.NickNameActivity">
+
+
+    <com.taoxue.ui.view.TopBar
+        android:id="@+id/top_bar"
+        style="@style/TopBar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:background="@color/white"
+        android:padding="13dp">
+
+
+        <EditText
+            android:id="@+id/nick_name_edt_input"
+            style="@style/TextView_14_wrap"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/nick_name_iv_edt_clear"
+            android:background="@null"
+            android:hint="昵称"
+            android:maxLength="16"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/text_gray" />
+
+        <ImageView
+            android:id="@+id/nick_name_iv_edt_clear"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="8dp"
+            android:src="@mipmap/ic_clear_input"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

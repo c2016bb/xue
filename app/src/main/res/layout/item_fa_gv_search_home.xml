@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    android:padding="@dimen/default_margin_small">
+
+    <ImageView
+        android:id="@+id/item_fa_home_gv_new_3_iv"
+        style="@style/Default_ImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+       />
+
+
+    <TextView
+        android:id="@+id/item_fa_home_gv_new_3_tv_title"
+        style="@style/TextView_14_wrap"
+        tools:text="成长的面包" />
+
+    <TextView
+        android:id="@+id/item_fa_home_gv_new_3_tv_description"
+        style="@style/TextView_single_line"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:text="在云彩面包的魔力下我们都将摆脱恐惧" />
+
+</LinearLayout>

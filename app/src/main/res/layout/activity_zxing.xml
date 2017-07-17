@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fl_zxing_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal"
+            android:background="@drawable/bg_circle_back"
+            android:padding="12dp"
+            android:onClick="back"
+            android:src="@mipmap/ic_back_white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="choosePhoto"
+                android:layout_marginRight="24dp"
+                android:src="@mipmap/ic_photo_choose" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:onClick="flashLight"
+                android:layout_marginRight="@dimen/normal"
+                android:src="@mipmap/ic_flahs_light" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        style="@style/TextView_12_wrap.White"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="160dp"
+        android:text="请对准二维码，即可完成扫描" />
+
+</FrameLayout>

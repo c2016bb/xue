@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <!--android:background="@color/selector_recyclerview_item_background"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size40dp"
+            android:orientation="horizontal"
+            >
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/commit_image_iv"
+                android:layout_width="@dimen/size40dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/size10dp"
+                >
+                <TextView
+                    android:id="@+id/commit_name_tv"
+                    style="@style/TextView_16_wrap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    >
+                    <com.taoxue.ui.view.StarBar
+                    android:id="@+id/commit_start_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:isIndicator="true"
+                    ratingbar:starCount="5"
+                    ratingbar:starDistance="@dimen/size5dp"
+                    ratingbar:starEmpty="@mipmap/star_hui"
+                    ratingbar:starFill="@mipmap/star_fill"
+                    ratingbar:starSize="@dimen/size10dp" />
+
+            <TextView
+                android:id="@+id/commit_time_tv"
+                style="@style/TextView_12_wrap.gray"
+                android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/commit_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="top"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size10dp">
+            </View>
+        </LinearLayout>
+        <!--<include layout="@layout/layout_divider_hor"></include>-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/size20dp"-->
+            <!--android:gravity="center_vertical">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView5"-->
+                <!--android:layout_width="@dimen/size20dp"-->
+                <!--android:layout_height="@dimen/size20dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="@dimen/size5dp"-->
+                <!--android:layout_toLeftOf="@+id/give_thumbs_count_tv"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@mipmap/u2462" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/give_thumbs_count_tv"-->
+                <!--style="@style/TextView_12_wrap.gray"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:text="()" />-->
+
+            <!--<com.taoxue.ui.view.StarBar-->
+                <!--android:id="@+id/commit_start_bar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:isIndicator="true"-->
+                <!--ratingbar:starCount="5"-->
+                <!--ratingbar:starDistance="@dimen/size5dp"-->
+                <!--ratingbar:starEmpty="@mipmap/star_hui"-->
+                <!--ratingbar:starFill="@mipmap/star_fill"-->
+                <!--ratingbar:starSize="@dimen/size10dp" />-->
+        <!--</RelativeLayout>-->
+       </LinearLayout>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            layout="@layout/layout_divider_hor"
+            ></include>
+    </LinearLayout>
+</LinearLayout>

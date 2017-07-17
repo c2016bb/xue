@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/BaseItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/normal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_diary_title"
+            style="@style/TextView_16_wrap"
+             />
+
+
+        <TextView
+            android:id="@+id/tv_diary_intro"
+            style="@style/TextView_14_wrap"
+            android:layout_marginBottom="@dimen/small"
+            android:layout_marginTop="@dimen/small"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/colorTextSecond" />
+
+
+            <TextView
+                android:id="@+id/tv_diary_time"
+                style="@style/TextView_14_wrap"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="9个小时前"
+                android:textColor="@color/colorTextSecond" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

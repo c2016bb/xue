@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_function_bg"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layout_pop_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp">
+
+            <TextView
+                style="@style/popwin_menu"
+                android:text="供应商" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_functionframe_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_pop_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/popwin_menu"
+                android:text="资源" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_functionframe_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_pop_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/popwin_menu"
+                android:text="数字资源库" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/menu_functionframe_line" />
+
+        <LinearLayout
+            android:id="@+id/layout_pop_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                style="@style/popwin_menu"
+                android:text="图书馆" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

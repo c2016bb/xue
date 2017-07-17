@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:text="音频列表"
+               android:layout_marginLeft="10dp"
+               style="@style/TextView_18_wrap.white"
+               />
+            <include layout="@layout/layout_divider_hor"></include>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/audiolist_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="ifContentScrolls"
+                android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/audiolist_close_tv"
+                style="@style/TextView_18_wrap.white"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="关闭" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

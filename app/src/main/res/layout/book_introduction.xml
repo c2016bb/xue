@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.taoxue.ui.view.TopBar
+        android:id="@+id/introduction_topbar"
+        style="@style/TopBar"
+        app:layout_collapseMode="pin"
+        app:title="@string/book_jieshao"></com.taoxue.ui.view.TopBar>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp"
+            >
+            <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+            <!--<android.support.design.widget.CollapsingToolbarLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    >
+                    <!--app:layout_collapseMode="parallax"-->
+                    <LinearLayout
+                        android:id="@+id/book_jieshao_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/book_instroduction_content_height"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="@dimen/size10dp"
+                        android:layout_marginRight="@dimen/size10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/book_image_iv"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:scaleType="fitCenter" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/size10dp"
+                            android:layout_weight="5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/book_title_tv"
+                                style="@style/TextView_16_wrap"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <com.taoxue.ui.view.StarBar
+                                    android:id="@+id/book_starbar_pinfen"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:isIndicator="true"
+                                    app:starCount="5"
+                                    app:starDistance="2dp"
+                                    app:starEmpty="@mipmap/star_score_hui"
+                                    app:starFill="@mipmap/star_score_fill"
+                                    app:starSize="@dimen/size15dp" />
+
+                                <TextView
+                                    android:id="@+id/book_pingfen_coun_tv"
+                                    style="@style/TextView_14_wrap.gray"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="3.2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    style="@style/TextView_14_wrap.gray"
+                                    android:text="@string/supplier" />
+
+                                <TextView
+                                    android:id="@+id/book_supplier_tv"
+                                    style="@style/TextView_14_wrap.gray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    style="@style/TextView_14_wrap.gray"
+                                    android:text="@string/total_reading" />
+
+                                <TextView
+                                    android:id="@+id/book_total_reading_tv"
+                                    style="@style/TextView_14_wrap.gray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical">
+
+                                    <ImageView
+                                        android:id="@+id/book_collection_iv"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@mipmap/collection_book" />
+
+                                    <TextView
+                                        style="@style/TextView_14_wrap.red"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="2dp"
+                                        android:text="@string/collection" />
+
+                                    <TextView
+                                        android:id="@+id/book_collection_coumn_tv"
+                                        style="@style/TextView_14_wrap.red"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="123" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical">
+
+                                    <ImageView
+                                        android:id="@+id/book_giv_thumb_iv"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@mipmap/give_thumb_book" />
+
+                                    <TextView
+                                        style="@style/TextView_14_wrap.red"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="2dp"
+                                        android:text="@string/give_thumbs" />
+
+                                    <TextView
+                                        android:id="@+id/book_giv_thumb_coumn_tv"
+                                        style="@style/TextView_14_wrap.red"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="123" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/book_start_read_btn"
+                                style="@style/TextView_14_wrap.White"
+                                android:layout_width="120dp"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_weight="3"
+                                android:background="@drawable/selector_book_button"
+                                android:gravity="center"
+                                android:text="开始阅读" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <include layout="@layout/layout_divider_gay_hor"></include>
+                </LinearLayout>
+
+            <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+            <com.taoxue.ui.module.classification.Image.tabs.ZTabLayout
+                android:id="@+id/book_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabIndicatorHeight="3dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/colorPrimary"
+                app:tabTextAppearance="@style/tablaout_textsize"
+                app:tabTextColor="@color/black" />
+
+            <include layout="@layout/layout_divider_hor"></include>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/boo_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            >
+        </android.support.v4.view.ViewPager>
+    </android.support.design.widget.CoordinatorLayout>
+    <!--<include layout="@layout/pin_jia"></include>-->
+
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</LinearLayout>

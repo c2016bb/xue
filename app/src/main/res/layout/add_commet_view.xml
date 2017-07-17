@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/orange"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    >
+    <include layout="@layout/layout_divider_hor"></include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="@dimen/size5dp"
+        >
+        <TextView
+            android:id="@+id/quxiao_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/fabu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size20dp"
+            android:text="发布"
+            android:layout_alignParentRight="true"
+            style="@style/TextView_18_wrap"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/size5dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打个分呗："
+            android:layout_marginLeft="@dimen/size20dp"
+            android:textSize="16sp"
+            />
+        <com.taoxue.ui.view.StarBar
+            android:id="@+id/commit_start_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:isIndicator="true"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="@dimen/size5dp"
+            ratingbar:starEmpty="@mipmap/star_hui"
+            ratingbar:starFill="@mipmap/star_fill"
+            ratingbar:starSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/commit_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/size10dp"
+        android:paddingBottom="@dimen/size10dp"
+        android:paddingLeft="@dimen/size20dp"
+        android:paddingRight="@dimen/size20dp"
+
+        >
+        <EditText
+            android:id="@+id/comment_Content_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text_gray"
+            android:hint="请添加评论内容"
+
+            android:paddingLeft="@dimen/size10dp"
+            android:paddingRight="@dimen/size10dp"
+            android:paddingTop="@dimen/size5dp"
+            android:paddingBottom="@dimen/size5dp"
+
+            android:background="@drawable/shape_comment_commit"
+            android:gravity="center_vertical"
+            android:textCursorDrawable="@drawable/shape_cursor_edittext"
+            android:layout_gravity="bottom"
+            />
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+
+    </LinearLayout>
+
+</LinearLayout>

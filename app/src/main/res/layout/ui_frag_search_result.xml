@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selectable_default_white"
+    android:gravity="left"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/default_margin_large"
+    android:paddingRight="@dimen/default_margin_large"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/frg_search_result_iv_pic"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_margin">
+
+        <TextView
+            android:id="@+id/frg_search_result_tv_name"
+            style="@style/TextView_14_wrap"
+            android:layout_gravity="left"
+            tools:text="刻意练习" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="供应商:"
+                android:textSize="@dimen/text_home_content" />
+
+            <TextView
+                android:id="@+id/frg_search_result_tv_supplier_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_home_content"
+                tools:text="乐儿" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="********"
+                android:textSize="@dimen/text_home_content" />
+
+            <TextView
+                android:id="@+id/frg_search_result_tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="8.4"
+                android:textSize="@dimen/text_home_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/frg_search_result_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            android:lines="5"
+            android:textSize="@dimen/text_home_content"
+            tools:text="首次提出“刻意练习”这个概念的是佛罗里达州立大学（Florida Sta
+            te University）心理学家 K. Anders Ericsson。这套练习方法的核心假设是，专家级
+            水平是逐渐地练出来的，而有效进步的关键在于找到一系列的小任务让受训者按顺序完成。
+            这些小任务必须是受训者正好不会做，但是又正好可以学习掌握的。完成这种练习要求受
+            训者思想高度集中，这就与那些例行公事或者带娱乐色彩的练习完全不同。“刻意练习”
+            的理论目前已经被广泛接受" />
+    </LinearLayout>
+
+
+</LinearLayout>

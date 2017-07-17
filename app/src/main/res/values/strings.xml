@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">读联体</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank \n fragment</string>
+    <!--通用-->
+    <string name="loading">加载中...</string>
+
+    <string name="home">首页</string>
+    <string name="classification">分类</string>
+    <string name="special">专题</string>
+    <string name="mine">我的</string>
+    <string name="more">更多</string>
+    <string name="setting">设置</string>
+    <string name="zhuce">注册</string>
+    <string name="tiaoguo">跳过</string>
+    <string name="exit">退出</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="refresh">刷新</string>
+
+    <!--首页-->
+    <string name="home_history_reading">热门好书</string>
+    <string name="home_new_release">馆藏推荐</string>
+    <string name="home_guess_you_like">猜你喜欢</string>
+    <string name="home_Library_recommendation">最新上线</string>
+    <string name="home_wonderful_recommendation">必读清单</string>
+    <string name="home_video">视频</string>
+    <string name="home_ebook">电子书</string>
+
+    <!--我的-->
+    <string name="my_information">我的</string>
+    <string name="reader_card_bind_success">绑定成功</string>
+    <string name="reader_card_bind_successed">您已成功绑定读者证</string>
+    <string name="unbind_reader_card">解除绑定</string>
+    <string name="name">姓名:</string>
+    <string name="reader_code_id">读者证号:</string>
+    <string name="reader_guan">所属馆:</string>
+    <string name="zonghe">姓名:;读者证号:;所属馆:</string>
+    <string name="my_libray">我的图书馆</string>
+    <string name="my_libray_info1">您阅读产生的费用将由以下图书馆进行买单</string>
+    <string name="my_libray_info2">点击箭头可以设置支付顺序</string>
+    <string name="bind_reader_card">绑定读者证</string>
+    <string name="please_choose_payment_method">请选择支付方式</string>
+    <string name="payment_set">设置默认</string>
+
+    <!--listViewFragment-->
+    <string name="my_collection">我的收藏</string>
+    <string name="play_record">播放记录</string>
+
+    <!-- 目的地 -->
+
+    <string name="selectpic_dialog_text01">拍照</string>
+    <string name="selectpic_dialog_text02">从相册选择</string>
+    <string name="selectpic_dialog_text03">取消</string>
+
+
+    <string name="saving_image">正在保存中</string>
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+
+    <!-- 分类-->
+    <string name="fenlei">分类</string>
+    <string name="e_book">电子书</string>
+    <string name="u_video">视频</string>
+    <string name="u_audio">音频</string>
+    <string name="u_picture">图像</string>
+    <string name="book_detail">作者:;出版社;;出版日期:;书号:;适合年级阅读:;</string>
+
+   <!--资源库-->
+    <string name="resource_library">资源库</string>
+    <string name="total_resource_count">总资源数:</string>
+    <string name="total_reader_count">阅读总数:</string>
+    <string name="cgs_guan">已采购该库的图书馆</string>
+    <!--专题-->
+    <string name="reader_count">人阅读</string>
+    <string name="zhuanti">专题</string>
+
+    <!--图书介绍-->
+    <string name="book_jieshao">图书介绍</string>
+    <string name="press">出版社:</string>
+    <string name="publication_date">出版日期:</string>
+    <string name="book_number">书号:</string>
+    <string name="suit_year">适合年级阅读:</string>
+    <string name="content_abstract">内容简介</string>
+    <string name="commit">评论(</string>
+    <string name="i_want_to_commit">立即评论</string>
+    <string name="add_book">+ 收藏</string>
+    <string name="recommend_book">推荐本书</string>
+    <string name="video_type">类型:</string>
+    <string name="video_dianji">点击量:</string>
+    <string name="guan_detail">信息:</string>
+    <string name="collection">收藏:</string>
+    <string name="give_thumbs">点赞:</string>
+    <string name="supplier">供应商:</string>
+    <string name="total_reading">阅读总数:</string>
+
+    <!--settingActivity-->
+    <string name="setting_push_message">推送消息</string>
+    <string name="setting_sound_switch">音效开关</string>
+    <string name="setting_automatic_update">自动更新</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_use_guide">使用指南</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="title_activity_reader_card">ReaderCardActivity</string>
+    <string name="setting_common_problem">常见问题</string>
+    <string name="please_login_first">请先登录</string>
+    <!--高仿美团城市选择-->
+    <string name="cp_select_city">选择城市</string>
+    <string name="cp_hot_city">热门资源</string>
+    <string name="cp_located_city">当前定位,点击查看此区域所有图书馆</string>
+    <string name="cp_hint_search_box">请输入城市名或拼音</string>
+    <string name="cp_nothing_found">没有搜索结果~</string>
+    <string name="cp_locating">正在定位…</string>
+    <string name="cp_located_failed">定位失败</string>
+
+</resources>

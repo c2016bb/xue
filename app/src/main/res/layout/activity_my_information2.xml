@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taoxue.ui.module.mine.MyInformationActivity">
+
+    <com.taoxue.ui.view.TopBar
+        android:id="@+id/topbar"
+        style="@style/TopBar"
+        app:title="编辑资料" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:padding="@dimen/default_margin_large"
+                android:id="@+id/rl_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.taoxue.ui.view.roundedimageview.RoundedImageView
+                    android:gravity="center"
+                    android:id="@+id/iv_head"
+                    style="@style/default_head"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:border_width="20dp"
+                    app:riv_border_color="@color/colorPrimary"
+                    app:riv_border_width="2dp"
+                    app:riv_corner_radius="50dp"
+                    app:riv_mutate_background="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/dividing_line_crude" />
+
+            <LinearLayout
+                android:id="@+id/ll_nickname"
+                style="@style/layout_padding"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text="昵称 " />
+
+                <TextView
+
+                    style="@style/TextView_12_wrap"
+                    android:text=" ：" />
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    style="@style/TextView_12_wrap"
+                    android:textColor="@color/textColor"
+                    tools:text="侯建军" />
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_sex"
+                style="@style/layout_padding"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text="性别 " />
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text=" ：" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/TextView_12_wrap"
+                    android:textColor="@color/textColor"
+                    tools:text="侯建军" />
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_birthday"
+                style="@style/layout_padding"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text="出生年份 " />
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text=" ：" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    style="@style/TextView_12_wrap"
+                    android:textColor="@color/textColor"
+                    tools:text="侯建军" />
+            </LinearLayout>
+
+
+            <View style="@style/dividing_line_crude" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_education"
+                style="@style/layout_padding"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text="学历 " />
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text=" ：" />
+
+                <TextView
+                    android:id="@+id/tv_education"
+                    style="@style/TextView_12_wrap"
+                    android:textColor="@color/textColor"
+                    tools:text="侯建军" />
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_industry"
+                style="@style/layout_padding"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text="行业 " />
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text=" ：" />
+
+                <TextView
+                    android:id="@+id/tv_industry"
+                    style="@style/TextView_12_wrap"
+                    android:textColor="@color/textColor"
+                    tools:text="侯建军" />
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_occupation"
+                style="@style/layout_padding"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text="职业 " />
+
+                <TextView
+                    style="@style/TextView_12_wrap"
+                    android:text=" ：" />
+
+                <TextView
+                    android:id="@+id/tv_occupation"
+                    style="@style/TextView_12_wrap"
+                    android:textColor="@color/textColor"
+                    tools:text="侯建军" />
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <Button
+                android:id="@+id/btn_quit"
+                android:layout_width="180dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:layout_margin="44dp"
+                android:background="@drawable/selector_default_button"
+                android:text="退出登录"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

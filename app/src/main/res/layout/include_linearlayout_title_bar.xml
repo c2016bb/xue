@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_search"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+
+    android:background="@drawable/shape_radiu_gray"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/fa_home_edt_search_selector"
+        style="@style/TextView_12_wrap.gray"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_height="match_parent"
+        android:drawableRight="@mipmap/icon_home_tag"
+        android:paddingRight="12dp"
+        android:text="全部" />
+
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:hint="@string/cp_hint_search_box"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="@color/cp_gray"
+        android:textColorHint="@color/cp_gray"
+        android:textCursorDrawable="@drawable/curson"
+        android:textSize="14sp"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/iv_search_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:src="@mipmap/cp_ic_search_clear"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:background="?android:attr/selectableItemBackground"
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:scaleType="center"
+        android:src="@mipmap/cp_ic_search"
+        tools:ignore="ContentDescription" />
+</LinearLayout>

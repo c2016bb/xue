@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        >
+    <TextView
+        android:id="@+id/book_author_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="作者："
+        android:singleLine="false"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextView_12_wrap.gray"
+            android:text="@string/press" />
+
+        <TextView
+            android:id="@+id/book_press_tv"
+            style="@style/TextView_12_wrap.gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            style="@style/TextView_12_wrap.gray"
+            android:text="@string/publication_date"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/publication_date_tv"
+            style="@style/TextView_12_wrap.gray" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_12_wrap.gray"
+                android:text="@string/book_number" />
+
+            <TextView
+                android:id="@+id/book_isbn_tv"
+                style="@style/TextView_12_wrap.gray" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_12_wrap.gray"
+                android:text="@string/suit_year" />
+
+            <TextView
+                android:id="@+id/book_suit_year_tv"
+                style="@style/TextView_12_wrap.gray" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--<com.taoxue.ui.view.MultiTextViewLayout-->
+        <!--android:id="@+id/book_mulit_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--app:rownum="5"-->
+        <!--app:isDivder="false"-->
+        <!--app:firstString="@string/book_detail"-->
+        <!--&gt;-->
+    <!--</com.taoxue.ui.view.MultiTextViewLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <View style="@style/dividing_line" />
+        <!--<include layout="@layout/layout_divider_hor"></include>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+        <View
+            android:id="@+id/fa_home_icon_flag_history"
+            style="@style/home_icon_flag" />
+        <TextView
+            style="@style/TextView_16_wrap"
+            android:layout_marginBottom="@dimen/size5dp"
+            android:layout_marginTop="@dimen/size5dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/content_abstract"
+            android:id="@+id/book_jianjie_tv" />
+        </LinearLayout>
+        <View style="@style/dividing_line" />
+        <!--<include layout="@layout/layout_divider_hor"></include>-->
+        <TextView
+            android:id="@+id/book_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            style="@style/TextView_14_gray"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    <!--<com.taoxue.utils.LimitLineTextView-->
+        <!--android:id="@+id/book_content_tv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:llTextColor="@android:color/darker_gray"-->
+        <!--/>-->
+</android.support.v4.widget.NestedScrollView>

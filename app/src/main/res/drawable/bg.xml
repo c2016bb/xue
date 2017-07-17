@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <gradient
+        android:angle="90"
+        android:endColor="#ffffff"
+        android:startColor="#ffffff" />
+
+    <solid android:color="#ffffff" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/default_alert_dialog_radius"
+        android:bottomRightRadius="@dimen/default_alert_dialog_radius"
+        android:topLeftRadius="@dimen/default_alert_dialog_radius"
+        android:topRightRadius="@dimen/default_alert_dialog_radius" />
+
+</shape>

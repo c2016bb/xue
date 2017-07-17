@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:layout_marginLeft="20dp"
+        >
+<ImageView
+    android:id="@+id/my_liblay_item_image_iv"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:src="@mipmap/ic_launcher"
+    />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/my_liblay_name_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        style="@style/TextView_16_wrap"
+        android:text="图书馆名"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="right|center_vertical"
+        android:layout_marginRight="20dp"
+        >
+        <ImageView
+            android:id="@+id/my_libray_item_up"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/my_liabray_up"
+            />
+
+        <ImageView
+         android:id="@+id/my_libray_item_down"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+            android:layout_toRightOf="@+id/my_libray_item_up"
+            android:layout_marginLeft="10dp"
+         android:src="@mipmap/my_libray_down"
+         />
+    </RelativeLayout>
+</LinearLayout>

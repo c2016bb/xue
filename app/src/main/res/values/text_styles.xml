@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextView_single_line">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxEms">15</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextView_14_wrap" parent="TextView_single_line">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/middle</item>
+        <item name="android:textCursorDrawable">@drawable/curson</item>
+        <item name="android:textColorHint">@color/divider</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+    <style name="TextView_13_wrap" parent="TextView_single_line">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/middle</item>
+        <item name="android:textCursorDrawable">@drawable/curson</item>
+        <item name="android:textColorHint">@color/divider</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+
+    <style name="TextView_14" parent="TextView_14_wrap">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Default_ImageView">
+        <item name="android:src">@mipmap/default_bg</item>
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">85dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="TextView_14.White" parent="TextView_14_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="TextView_16_exactly">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textColorHint">@color/divider</item>
+    </style>
+
+    <style name="TextView_14_wrap.White" parent="TextView_14_wrap">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView_14_wrap.gray" parent="TextView_14_wrap">
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="TextView_14_wrap.red" parent="TextView_14_wrap">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextView_12_wrap" parent="TextView_14_wrap">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView_8_wrap" parent="TextView_14_wrap">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+
+    <style name="TextView_12_wrap.White" parent="TextView_12_wrap">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView_12_wrap.gray" parent="TextView_14_wrap">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView_16_wrap.White" parent="TextView_14_wrap">
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textSize">16sp</item>
+</style>
+
+    <style name="TextView_16_wrap.gray" parent="TextView_14_wrap">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView_16_wrap" parent="TextView_14_wrap">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView_16_wrap.white" parent="TextView_14_wrap">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView_18_wrap" parent="TextView_14_wrap">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextView_18_wrap.white" parent="TextView_14_wrap">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView_20_wrap" parent="TextView_14_wrap">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="destination_text_focus_wrap" parent="TextView_14_wrap">
+        <item name="android:textSize">@dimen/destination_text_large</item>
+        <item name="android:textColor">@color/color_destination_focus_text</item>
+    </style>
+
+    <style name="Order_title" parent="TextView_14_wrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="home_icon_entry">
+        <item name="android:layout_width">7dp</item>
+        <item name="android:layout_height">11dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@mipmap/ic_arrow_right</item>
+    </style>
+
+    <style name="home_icon_flag">
+        <item name="android:layout_width">3dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="home_tag_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="home_tag_style2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selectable_default_white</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingRight">@dimen/default_margin</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="TextView_small_wrap.gray" parent="TextView_14_wrap">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textSize">8sp</item>
+    </style>
+
+
+
+
+
+    <style name="TextView_parent">
+        <item name="android:maxEms">15</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:drawablePadding">@dimen/middle</item>
+        <item name="android:textCursorDrawable">@drawable/curson</item>
+        <item name="android:textColorHint">@color/divider</item>
+    </style>
+
+    <style name="TextView_14_nomal" parent="TextView_parent">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+   <style name="TextView_14_gray">
+       <item name="android:textColor">@android:color/darker_gray</item>
+       <item name="android:textSize">14sp</item>
+       <item name="android:lineSpacingMultiplier">1.2</item>
+   </style>
+</resources>

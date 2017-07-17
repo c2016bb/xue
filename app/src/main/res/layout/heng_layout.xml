@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/size5dp"
+        android:orientation="horizontal">
+
+        <com.taoxue.ui.view.AlignTextView
+            android:id="@+id/alignTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/name"
+            app:AlignTextColor="@android:color/darker_gray"
+            app:AlignTextSize="16sp"
+            app:Max="5" />
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/TextView_14_wrap.gray"
+            android:text="1000983"
+            android:layout_width="0dp"
+            android:layout_weight="2" />
+    </LinearLayout>
+
+</LinearLayout>

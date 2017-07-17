@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.taoxue.ui.module.login.ReaderCardActivity">
+    <com.taoxue.ui.view.TopBar
+        android:id="@+id/topbar"
+        style="@style/TopBar"
+        app:title="绑定读者证" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/reader_skip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/size10dp"
+                android:textColor="@color/cc"
+                android:textSize="@dimen/content_text"
+                android:text="@string/tiaoguo"/>
+        </RelativeLayout>
+    </com.taoxue.ui.view.TopBar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/reader_code"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/shape_classify_activity_qiaodao"
+                android:textSize="@dimen/content_text"
+                android:numeric="integer"
+                android:hint="请输入读者证号"
+                android:paddingBottom="8dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp" />
+            <RelativeLayout
+
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/selector_register_sure" >
+            <TextView
+                android:id="@+id/reader_codeBtn"
+                 android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="验   证" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/reader_xing_Edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/shape_classify_activity_qiaodao"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:textSize="@dimen/content_text" />
+
+        <RelativeLayout
+            android:id="@+id/reader_BTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/selector_register_sure" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:text="提  交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/subtitle_text" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

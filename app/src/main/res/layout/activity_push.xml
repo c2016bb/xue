@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@mipmap/welcome">
+
+    <LinearLayout
+        android:id="@+id/ui_push_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/ui_push_txt"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳过"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/push_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/small"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

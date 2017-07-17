@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_fa_home_gv_new_3_iv"
+            style="@style/Default_ImageView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+             />
+
+        <TextView
+            android:layout_marginBottom="13dp"
+            android:id="@+id/item_fa_home_gv_new_3_tv_title"
+            style="@style/TextView_12_wrap"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_home_title"
+            tools:text="成长的面包" />
+</LinearLayout>

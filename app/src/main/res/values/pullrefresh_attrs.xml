@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <declare-styleable name="pullrefresh">
+        <attr name="header_img" format="reference"></attr>
+        <attr name="header_textSize" format="dimension"></attr>
+        <attr name="header_TextColor" format="reference|color"></attr>
+    </declare-styleable>
+    -->
+    <declare-styleable name="PullRefresh">
+        <attr name="headerRes" format="reference" />
+        <attr name="pullLimitDistance" format="dimension" />
+        <attr name="footerRes" format="reference" />
+        <attr name="header_img" format="reference" />
+        <attr name="header_textSize" format="dimension" />
+        <attr name="header_textColor" format="reference|color" />
+        <attr name="listview_paddingTop" format="dimension" />
+        <attr name="listview_paddintBottom" format="dimension" />
+        <attr name="listview_paddintRight" format="dimension" />
+        <attr name="listview_paddintLeft" format="dimension" />
+        <attr name="lvDivider" format="reference" />
+        <attr name="lvFooterDividerEnable" format="boolean" />
+        <attr name="lvHeadDividerEnable" format="boolean" />
+        <attr name="lvDividerHeight" format="dimension" />
+        <attr name="content_layout" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fa_home_fg_shunfeng_ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.bigkoo.convenientbanner.ConvenientBanner
+            android:id="@+id/fa_home_convenientBanner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/bg_color"
+            app:canLoop="true" />
+
+        <com.taoxue.ui.view.toppicLayoutView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="11dp"
+            android:paddingTop="11dp" />
+
+        <View style="@style/dividing_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fa_home_ll_history_reading"
+                style="@style/home_tag_style2">
+
+
+                <RelativeLayout style="@style/home_tag_style">
+
+                    <View
+                        android:id="@+id/fa_home_icon_flag_history"
+                        style="@style/home_icon_flag" />
+
+                    <TextView
+                        style="@style/TextView_13_wrap"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:layout_toEndOf="@+id/fa_home_icon_flag_history"
+                        android:layout_toRightOf="@+id/fa_home_icon_flag_history"
+                        android:text="@string/home_history_reading" />
+
+                    <ImageView style="@style/home_icon_entry" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <com.taoxue.ui.view.ListViewForScrollView
+                android:id="@+id/fa_home_lsv_history_reading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/c_line"
+                android:dividerHeight="1px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fa_home_ll_Library_recommendation"
+                style="@style/home_tag_style2">
+
+
+                <RelativeLayout style="@style/home_tag_style">
+
+
+                    <ImageView
+                        android:id="@+id/fa_home_icon_Library_recommendation"
+                        style="@style/home_icon_flag" />
+
+                    <TextView
+                        style="@style/TextView_13_wrap"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:layout_toEndOf="@+id/fa_home_icon_Library_recommendation"
+                        android:layout_toRightOf="@+id/fa_home_icon_Library_recommendation"
+                        android:text="@string/home_new_release" />
+
+                    <ImageView style="@style/home_icon_entry" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <com.taoxue.ui.view.GridViewForScrollView
+                android:id="@+id/fa_home_gv_Library_recommendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/white"
+                android:horizontalSpacing="6dp"
+                android:numColumns="2"
+                android:padding="10dp"
+                android:verticalSpacing="6dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/home_tag_style"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/default_margin_small">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/home_icon_special_subject" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/default_margin_small">
+
+                    <View
+                        style="@style/dividing_line"
+                        android:layout_width="90dp"
+                        android:layout_height="2px"
+                        android:background="@color/c_line" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="全网/精准/细分/专业/专注"
+                        android:textSize="8sp" />
+
+                    <View
+                        style="@style/dividing_line"
+                        android:layout_width="90dp"
+                        android:layout_height="2px"
+                        android:background="@color/c_line" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_margin="@dimen/default_margin"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fa_home_iv_history_classical"
+                    style="@style/classification_RadioButton"
+                    android:src="@mipmap/home_icon_history_classical" />
+
+                <ImageView
+                    android:id="@+id/fa_home_iv_guoxue_classical"
+                    style="@style/classification_RadioButton"
+                    android:src="@mipmap/home_icon_guoxue_classical" />
+
+                <ImageView
+                    android:id="@+id/fa_home_iv_preschool_education"
+                    style="@style/classification_RadioButton"
+                    android:src="@mipmap/home_icon_preschool_education" />
+
+                <ImageView
+                    android:id="@+id/fa_home_iv"
+                    style="@style/classification_RadioButton"
+                    android:src="@mipmap/home_icon_online_painting" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fa_home_ll_new_release_2"
+                style="@style/home_tag_style2">
+
+                <RelativeLayout style="@style/home_tag_style">
+
+                    <ImageView
+                        android:id="@+id/fa_home_icon_new_release_2"
+                        style="@style/home_icon_flag" />
+
+                    <TextView
+                        style="@style/TextView_13_wrap"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:layout_toEndOf="@+id/fa_home_icon_new_release_2"
+                        android:layout_toRightOf="@+id/fa_home_icon_new_release_2"
+                        android:text="@string/home_wonderful_recommendation" />
+
+                    <ImageView style="@style/home_icon_entry" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <com.taoxue.ui.view.GridViewForScrollView
+                android:id="@+id/fa_home_gv_new_release_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/white"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:padding="8dp"
+                android:verticalSpacing="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fa_home_ll_new_release"
+                style="@style/home_tag_style2">
+
+                <RelativeLayout style="@style/home_tag_style">
+
+                    <ImageView
+                        android:id="@+id/fa_home_icon_new_release"
+                        style="@style/home_icon_flag" />
+
+                    <TextView
+                        style="@style/TextView_13_wrap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:layout_toEndOf="@+id/fa_home_icon_new_release"
+                        android:layout_toRightOf="@+id/fa_home_icon_new_release"
+                        android:text="@string/home_Library_recommendation" />
+
+                    <ImageView style="@style/home_icon_entry" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <com.taoxue.ui.view.GridViewForScrollView
+                android:id="@+id/fa_home_gv_new_release"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/white"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:padding="8dp"
+                android:verticalSpacing="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fa_home_ll_guess_you_like"
+                style="@style/home_tag_style2">
+
+                <RelativeLayout style="@style/home_tag_style">
+
+                    <ImageView
+                        android:id="@+id/fa_home_icon_ll_guess_you_like"
+                        style="@style/home_icon_flag" />
+
+                    <TextView
+                        style="@style/TextView_13_wrap"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:layout_toEndOf="@+id/fa_home_icon_ll_guess_you_like"
+                        android:layout_toRightOf="@+id/fa_home_icon_ll_guess_you_like"
+                        android:text="@string/home_guess_you_like" />
+
+                    <ImageView style="@style/home_icon_entry" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/dividing_line" />
+
+            <com.taoxue.ui.view.ListViewForScrollView
+                android:id="@+id/fa_home_gv_new_release_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/c_line"
+                android:dividerHeight="1px" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

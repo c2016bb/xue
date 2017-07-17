@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+    <style name="TopBar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/topbar_height</item>
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决空白部分-->
+        <item name="contentInsetEnd">0dp</item><!-- 设置该属性解决空白部分-->
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>   <!--android:elevation="6dp">-->
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:elevation">3dp</item>
+    </style>
+
+    <style name="statusBarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>
